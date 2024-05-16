@@ -34,4 +34,18 @@ Threshold can be changed in the 'threshold' variable
 
 6. Run 'create_test_pickle.py' to split the 'gazefollow_new_final.pickle' into train and test
 
-7. 
+7. Clone the git repo - https://github.com/CodeMonsterPHD/GaTector-A-Unified-Framework-for-Gaze-Object-Prediction.git
+
+8. Use the ./gatector/main.py in place of the main.py of the above repo
+
+9. Place the ./gatector/voc_classes1.txt in the ./data/anchors
+
+10. Run the following command for training
+
+python main.py --train_mode 0 --train_dir './data/gazefollow_extended_reduced/' --train_annotation './data/gazefollow_extended_reduced/train_gazefollow_new_final.pickle' --test_dir './data/gazefollow_extended_reduced/' --test_annotation './data/gazefollow_extended_reduced/test_gazefollow_new_final.pickle'
+
+12. Place the gazefollow_extended_reduce in the ./data
+
+13. Place the train_gazefollow_new_final.pickle and test_gazefollow_new_final.pickle in ./data/gazefollow_new_final
+
+14. 
