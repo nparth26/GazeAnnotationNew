@@ -40,12 +40,11 @@ Threshold can be changed in the 'threshold' variable
 
 9. Place the ./gatector/voc_classes1.txt in the ./data/anchors
 
-10. Run the following command for training
+10. Place the gazefollow_extended_reduce in the ./data
+
+11. Place the train_gazefollow_new_final.pickle and test_gazefollow_new_final.pickle in ./data/gazefollow_new_final
+
+12. Run the following command for training
 
 python main.py --train_mode 0 --train_dir './data/gazefollow_extended_reduced/' --train_annotation './data/gazefollow_extended_reduced/train_gazefollow_new_final.pickle' --test_dir './data/gazefollow_extended_reduced/' --test_annotation './data/gazefollow_extended_reduced/test_gazefollow_new_final.pickle'
 
-12. Place the gazefollow_extended_reduce in the ./data
-
-13. Place the train_gazefollow_new_final.pickle and test_gazefollow_new_final.pickle in ./data/gazefollow_new_final
-
-14. 
